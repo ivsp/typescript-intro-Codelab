@@ -1,0 +1,24 @@
+## Iconos "TS" y "DT" en npm
+
+Al instalar dependencias en npm, los iconos: "TS" y "DT" tienen significados específicos y están relacionados con el uso de TypeScript en el desarrollo de proyectos.
+
+### Icono "TS"
+
+El icono "TS" indica que la dependencia ha sido escrita en TypeScript o proporciona tipos TypeScript definidos. Es decir, que la dependencia incluye archivos `.d.ts` o su equivalente, que son archivos de declaración que describen la forma en que se deben usar los módulos y las funciones definidas en la dependencia en TypeScript.
+
+### Icono "DT"
+
+El icono "DT" indica que la dependencia está siendo obtenida de `@types`, un registro especial de paquetes en npm que proporciona archivos de definición TypeScript para bibliotecas JavaScript existentes. Estos archivos de definición permiten a los desarrolladores de TypeScript utilizar estas bibliotecas JavaScript existentes con la comodidad y seguridad de un entorno TypeScript.
+
+### Relación con `types` y `typeRoots` en `tsconfig.json`
+
+Las propiedades `types` y `typeRoots` en el archivo `tsconfig.json` están relacionadas con la forma en que TypeScript gestiona y utiliza los tipos en un proyecto.
+
+- **`types`**: Esta propiedad se utiliza para especificar qué archivos de declaración TypeScript se incluirán automáticamente en el proyecto. Puede restringir o expandir los archivos de declaración a incluir en el proyecto.
+- **`typeRoots`**: Esta propiedad le dice a TypeScript dónde buscar archivos de declaración. Puede restringir o expandir la búsqueda de archivos de declaración a directorios específicos.
+
+La relación entre estos conceptos radica en cómo TypeScript incorpora los tipos de las dependencias y cómo se gestionan y buscan estos tipos en el proyecto.
+
+## Entregable
+
+El entregable de este codelab se encuentra en el fichero `src/delivered-exercise.ts`
